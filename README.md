@@ -52,5 +52,4 @@
 - Prime Checker
 - Java Factory Pattern
 - Java Singleton Pattern
-
-Covariant Return Types
+- Covariant Return Types
