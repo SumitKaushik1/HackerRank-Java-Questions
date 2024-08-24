@@ -1,0 +1,31 @@
+import java.util.*;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.io.IOException;
+public class Solution {
+
+    public static void main(String[] args) {
+       try(BufferedReader buff=new BufferedReader(new InputStreamReader(System.in))){
+            int a= Integer.parseInt(buff.readLine());//buff.readLine() will return the string 
+          int b= Integer.parseInt(buff.readLine());
+          int c=Integer.parseInt(buff.readLine());
+        
+        // Complete this line
+        // Complete this line
+      
+        System.out.println(a);
+        // Complete this line
+        // Complete this line
+        System.out.println(b);
+        System.out.println(c);
+           
+           
+           
+       }catch(IOException e){
+           
+       }
+       
+         
+        
+    }
+}
