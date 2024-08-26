@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        try(Scanner scan = new Scanner(System.in)){
+             int i = scan.nextInt();
+        
+        // Write your code here.
+            double d=scan.nextDouble();
+             scan.nextLine();//it will take the "enter" "\n" as the input
+            String s=scan.nextLine();//then here comes it will take input till \n is not entered 
+
+        System.out.println("String: " + s);
+        System.out.println("Double: " + d);
+        System.out.println("Int: " + i);  
+            
+        }
+     
+    }
+}
