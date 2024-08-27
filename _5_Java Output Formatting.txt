@@ -1,0 +1,27 @@
+                         }
+                     }
+                     else{
+                         for(char a2:a3){
+                         toStore[index]=a2;
+                         index++;
+                     }
+                     }
+                     
+                     
+                 }else{
+                     
+                     for(char a2:a3){
+                         toStore[index]=a2;
+                         index++;
+                     }
+                 }
+                System.out.println(String.valueOf(toStore)); 
+                //System.out.println(Arrays.toString(toStore));
+               
+            }
+            System.out.println("================================");
+
+    }
+}
+
+
