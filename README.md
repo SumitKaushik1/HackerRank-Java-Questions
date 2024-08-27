@@ -1,7 +1,7 @@
 # HackerRank-Questions
 
-- Welcome to Java!
-- Java Stdin and Stdout I
+_1_ Welcome to Java!
+_2_ Java Stdin and Stdout I
 - Java If-Else
 - Java Stdin and Stdout II
 - Java Output Formatting
