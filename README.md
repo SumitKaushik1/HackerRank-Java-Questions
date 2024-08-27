@@ -3,9 +3,13 @@
 _1_ Welcome to Java!
 <br>
 _2_ Java Stdin and Stdout I
-- Java If-Else
-- Java Stdin and Stdout II
-- Java Output Formatting
+<br>
+_3_ Java If-Else
+<br>
+_4_ Java Stdin and Stdout II
+<br>
+_5_ Java Output Formatting
+<br>
 - Java Loops I
 - Java Loops II
 - Java Datatypes
