@@ -10,7 +10,8 @@ _4_ Java Stdin and Stdout II
 <br>
 _5_ Java Output Formatting
 <br>
-- Java Loops I
+_6_ Java Loops I
+<br>
 - Java Loops II
 - Java Datatypes
 - Java End-of-file
