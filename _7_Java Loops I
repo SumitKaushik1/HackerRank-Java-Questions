@@ -1,0 +1,39 @@
+import java.io.*;
+import java.math.*;
+import java.security.*;
+import java.text.*;
+import java.util.*;
+import java.util.concurrent.*;
+import java.util.function.*;
+import java.util.regex.*;
+import java.util.stream.*;
+import static java.util.stream.Collectors.joining;
+import static java.util.stream.Collectors.toList;
+
+
+
+public class Solution {
+    public static void main(String[] args) throws IOException {
+        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+        
+        //bufferReader(buffer or space or toStore for characters for reading)<-  inputStreamReader(node stream ,basic funcionality to read characters from console  or we can say it convert the characters from console to stream fo characters Stream<char>) <- console 
+        
+
+        int N = Integer.parseInt(bufferedReader.readLine().trim());
+        /*Returns a string whose value is this string, with all leading and trailing space removed, where space is defined as any character whose codepoint is less than or equal to 'U+0020' (the space character).*/
+        /*
+            ___________Hello World!  
+                   to  
+            Hello World!
+        */
+           for(int i=1;i<=10;i++){
+             
+             System.out.println(N+" "+"x"+" "+i+" "+"="+" "+N*i);
+             
+             
+         }
+        
+        
+        bufferedReader.close();
+    }
+}
