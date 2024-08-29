@@ -12,7 +12,8 @@ _5_ Java Output Formatting
 <br>
 _6_ Java Loops I
 <br>
-- Java Loops II
+_7_ Java Loops II
+<br>
 - Java Datatypes
 - Java End-of-file
 - Java Static Initializer Block
