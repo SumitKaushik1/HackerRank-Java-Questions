@@ -14,7 +14,8 @@ _6_ Java Loops I
 <br>
 _7_ Java Loops II
 <br>
-- Java Datatypes
+_8_ Java Datatypes
+<br>
 - Java End-of-file
 - Java Static Initializer Block
 - Java Int to String
