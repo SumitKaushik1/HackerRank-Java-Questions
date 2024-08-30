@@ -1,0 +1,22 @@
+Exception();
+            }
+            catch(Exception e)
+            {
+                //System.out.println("inside exception");
+                System.out.println(sc.next()+" can't be fitted anywhere.");
+            }
+         
+         
+         
+         
+         
+           
+       } 
+     
+
+        }
+    }
+}
+
+
+
