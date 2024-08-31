@@ -1,0 +1,27 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        try(Scanner sc=new Scanner(System.in)){
+            int count=0;
+            while(sc.hasNextLine()){
+                //sc.hasNextLine  will check there exist the next line 
+                //if yes thay line is stored in the buffer of the scanner
+                 ++count;
+                 String addCount=String.valueOf(count);
+                 //since the scanner buffer already has the 
+                 //line not need to supply any line from standard input 
+                  String s=sc.nextLine(); 
+                  String s1= addCount.concat(" "+s);
+                   System.out.println(s1);
+                
+            }
+            
+            
+        }
+        
+    }
+}
