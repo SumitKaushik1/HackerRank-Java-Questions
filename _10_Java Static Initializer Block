@@ -1,0 +1,40 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+        
+            private static  int length;
+            private static  int breadth;
+            private static Scanner sc;
+            
+            static{
+                sc=new Scanner(System.in);
+                breadth=sc.nextInt();
+                length=sc.nextInt();
+                
+                
+            }
+            
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+     
+         try{
+               if(breadth<=0 || length <=0)
+              throw new Exception();
+            else
+              System.out.println(length*breadth);
+             
+         }catch(Exception e){ System.out.println("java.lang.Exception: Breadth and height must be positive");}
+          
+            
+      }       
+       
+ 
+       
+       
+       
+       
+        
+     }   
+        
+    
