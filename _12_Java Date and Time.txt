@@ -1,0 +1,31 @@
+
+import java.time.LocalDate;
+import java.time.DayOfWeek;
+import java.time.format.TextStyle;
+class Result {
+
+    /*
+     * Complete the 'findDay' function below.
+     *
+     * The function is expected to return a STRING.
+     * The function accepts following parameters:
+     *  1. INTEGER month
+     *  2. INTEGER day
+     *  3. INTEGER year
+     */
+
+    public static String findDay(int month, int day, int year) {
+        
+        //LocalDate is the class 
+        LocalDate dateInLocalDate=LocalDate.of(year, month, day);//you can use this class for comparing to the local date
+        
+        //DayOfWeek is the enum  
+        DayOfWeek dayOfWeek=dateInLocalDate.getDayOfWeek();
+    
+         //TextStyle.FULL -->TextStyle is the class ,FULL  is the datamember of TextStyle class 
+         //Locale is the class ENGLISH IS THE DATAMEMBER OF THIS CLASS IE IN JAVA English language is there 
+        return  dayOfWeek.getDisplayName(TextStyle.FULL,Locale.ENGLISH).toUpperCase();
+    }
+
+}
+
