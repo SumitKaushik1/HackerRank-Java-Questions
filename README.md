@@ -24,7 +24,8 @@ _11_ Java Int to String
 <br>
 _12_ Java Date and Time
 <br>
-- Java Currency Formatter
+_13_ Java Currency Formatter
+<br>
 - Java Strings Introduction
 - Java Substring
 - Java Substring Comparisons
