@@ -26,7 +26,8 @@ _12_ Java Date and Time
 <br>
 _13_ Java Currency Formatter
 <br>
-- Java Strings Introduction
+_14_ Java Strings Introduction
+<br>
 - Java Substring
 - Java Substring Comparisons
 - Java String Reverse
