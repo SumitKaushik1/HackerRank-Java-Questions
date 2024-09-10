@@ -28,7 +28,7 @@ _13_ Java Currency Formatter
 <br>
 _14_ Java Strings Introduction
 <br>
-_15_Java Substring
+_15_ Java Substring
 <br>
 - Java Substring Comparisons
 - Java String Reverse
