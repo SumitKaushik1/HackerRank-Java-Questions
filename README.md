@@ -28,7 +28,8 @@ _13_ Java Currency Formatter
 <br>
 _14_ Java Strings Introduction
 <br>
-- Java Substring
+_15_Java Substring
+<br>
 - Java Substring Comparisons
 - Java String Reverse
 - Java Anagrams
