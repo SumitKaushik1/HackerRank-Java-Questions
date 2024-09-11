@@ -1,1 +1,92 @@
 
+import java.util.Scanner;
+
+public class Solution {
+
+
+    public static String getSmallestAndLargest(String s, int k) {
+        String smallest = "";
+        String largest = "";
+        
+        // Complete the function
+        // 'smallest' must be the lexicographically smallest substring of length 'k'
+        // 'largest' must be the lexicographically largest substring of length 'k'
+        
+        char[] actualStringGiven=s.toCharArray();
+        java.util.List<String> l=new java.util.ArrayList<>();
+   
+        
+        //for(int lengthOfSubstring=1;lengthOfSubstring<=actualStringGiven.length;lengthOfSubstring++) ----------------------->it is for the all types of substring form length 1 to the size of array of char
+        
+        //for only length of string 3
+        //for(int lengthOfSubstring=3;lengthOfSubstring<=3;lengthOfSubstring++)
+        //k means substring length
+        
+        for(int lengthOfSubstring=k;lengthOfSubstring<=k;lengthOfSubstring++)
+          {    
+              
+              
+                        //like w=lengthOfSubstring =1,we=lenghthOfSubstring=2;                                                           ......welcometojava=lengthOfSubstring=13
+              
+              
+               for( int startOfSubstringIndex=0;startOfSubstringIndex<=      (actualStringGiven.length-lengthOfSubstring);startOfSubstringIndex++) {
+                   
+                   
+                   
+                   // let length of the substring is 2(we can  take 1 but                                              // understanding we are taking)
+               // so index start from 0th index so "we" is printed b/z length is 2  ie          
+                //startOfSubstringIndex=0 ie oth and 1th index
+               // if suppose start is incremented to 12th index then there is "a" is there after index                  //is 13 th which is not available b/z length is 12 so index is from 0 th to the 12 th    /                 //only so start // must go to the  till 11th index so that 12 th
+                //index is available to make substring of
+                                   // length 2, so c.length-lengthOfSubstring
+                 //13-2 =11 ,startOfSubstringIndex<=11
+                  
+                  
+                     int endSubstringIndex=startOfSubstringIndex+lengthOfSubstring-1;
+                     
+                     
+                      //eg let startOfSubstringIndex=0,lengthOfSubstring=2,-1 b/x reduce 1 to fix to index 
+                       //endSubstringIndex=0+2-1=1
+                      //startOfSubstringIndex=0 ,endSubstringIndex=1 , substring is we
+                     //char []toStore3lengthString=new char[3];//to store of length of 3
+                     char []toStore3lengthString=new char[k];//to store length of k
+                     int toStore3lengthStringCount=0;
+                     for(int subStringIndex=startOfSubstringIndex;subStringIndex<=endSubstringIndex;                              subStringIndex++){
+                         
+                      //one loop make one full  substring
+                       //System.out.print(actualStringGiven[subStringIndex]); 
+                                                                                       
+                      toStore3lengthString[toStore3lengthStringCount]=actualStringGiven[subStringIndex];                       toStore3lengthStringCount++;
+                    //copy by value (reference)
+                    
+                    }  
+                    String toAddStringOf3=String.valueOf(toStore3lengthString); //non literal
+                    //to convert the character array into the  String 
+                    l.add(toAddStringOf3);//
+                    //to store the 3 length string into list
+                  // System.out.println();   ---this is only to print all the substrings in different line
+                      
+                  }  
+               
+               
+               }   
+              
+              
+             java.util.Collections.sort(l);//it interally use the natural sorting compareTo() of Comparable interface ie implemented by the String class already and sort the String lexicographically
+              
+              smallest=l.get(0);
+              largest=l.get(l.size()-1);
+             
+         return smallest + "\n" + largest;
+    }
+
+
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        String s = scan.next();
+        int k = scan.nextInt();
+        scan.close();
+      
+        System.out.println(getSmallestAndLargest(s, k));
+    }
+}
