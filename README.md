@@ -30,7 +30,8 @@ _14_ Java Strings Introduction
 <br>
 _15_ Java Substring
 <br>
-- Java Substring Comparisons
+_16_ Java Substring Comparisons
+<br>
 - Java String Reverse
 - Java Anagrams
 - Java String Tokens
