@@ -34,7 +34,8 @@ _16_ Java Substring Comparisons
 <br>
 _17_ Java String Reverse
 <br>
-- Java Anagrams
+_18_ Java Anagrams
+<br>
 - Java String Tokens
 - Pattern Syntax Checker
 - Java BigDecimal
