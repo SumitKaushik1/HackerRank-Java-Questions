@@ -1,0 +1,52 @@
+static boolean isAnagram(String a, String b) {
+        // Complete the function
+        //bydefault considering both string are anagrams
+        boolean flagOfBothAlphaMatches=true;
+       char[]characterCapitalArray=new char[26];
+       for(int i=65;i<=90;i++){
+           
+           characterCapitalArray[i-65]=(char)i;
+           
+       } 
+       
+       int[]characterCountArray=new int[26];//bydefault all zero
+       char[]firstString=a.toCharArray();
+       
+       for(int i=0;i<firstString.length;i++){
+           
+               for(int j=0;j<26;j++){
+                   
+                   Character firstStringCharacter=new Character(firstString[i]);
+                   Character alphabeticCharacter=new Character(characterCapitalArray[j]);
+                                      if(firstStringCharacter.equals(alphabeticCharacter) || firstStringCharacter.equals(Character.toLowerCase(alphabeticCharacter)))
+                         ++characterCountArray[j];
+               }
+           
+       } 
+       
+       
+       
+       int[]characterCountArray2=new int[26];//bydefault all zero
+       char[]secondString=b.toCharArray();
+       
+       for(int i=0;i<secondString.length;i++){
+           
+               for(int j=0;j<26;j++){
+                   
+                   Character secondStringCharacter=new Character(secondString[i]);
+                   Character alphabeticCharacter=new Character(characterCapitalArray[j]);
+System.out.println(countsecondString);
+            
+            if(countfirstString.equals(countsecondString))
+                 flagOfBothAlphaMatches=true;
+            else{
+                flagOfBothAlphaMatches=false;
+                break;
+            }
+              
+            
+        }
+     
+           return  flagOfBothAlphaMatches;
+    } 
+       
