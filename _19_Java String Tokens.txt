@@ -1,0 +1,45 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        String s = scan.nextLine();
+        // Write your code here.
+        int count=0;
+      // is composed of any of the following: English alphabetic
+        //letters, blank spaces, exclamation points (!), commas (,), question marks (?), periods (.), 
+        //underscores (_), apostrophes ('), and at symbols (@).
+       String [] arr=s.split("[ !,?._'@]+");
+             //String [] arr=s.split("[!,?._']+");
+       
+      
+        for(String s1:arr){
+         
+           if(!s1.isEmpty())  
+                  count++;
+            }
+      
+       
+        //if(s.startsWith(" ")){
+         //  System.out.println(count--);
+       //}else if(s.isEmpty()){
+         //   System.out.println(0);
+       //}
+       
+       //else{
+         System.out.println(count); 
+      // }
+       
+       
+       for(String s1:arr){
+           if(!s1.isEmpty())  
+           System.out.println(s1);
+           
+       }
+        
+        
+        scan.close();
+    }
+}
