@@ -38,7 +38,8 @@ _18_ Java Anagrams
 <br>
 _19_ Java String Tokens
 <br>
-- Pattern Syntax Checker
+_20_ Pattern Syntax Checker
+<br>
 - Java BigDecimal
 - Java Primality Test
 - Java BigInteger
