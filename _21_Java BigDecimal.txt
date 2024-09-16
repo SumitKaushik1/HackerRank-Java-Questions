@@ -1,0 +1,24 @@
+
+
+    
+    
+    
+
+
+    
+    Arrays.sort(s,0,n,(o1,o2)->{
+       
+  
+       
+        
+        BigDecimal b1=new BigDecimal((String)o1);//since 
+        BigDecimal b2=new BigDecimal((String)o2);
+        return  b2.compareTo(b1);//uses the  BigDecimal compareToMethod//taking teh one argument ,(Comparable class bigdecimal has implemeneted )
+        //b1 and b2 are of bigdecimal type so compareTo uses the equals method of the bigdecimal classs only
+        
+    });  
+    
+
+
+     
+
