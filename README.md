@@ -40,7 +40,7 @@ _19_ Java String Tokens
 <br>
 _20_ Pattern Syntax Checker
 <br>
-_21_Java BigDecimal
+_21_ Java BigDecimal
 <br>
 - Java Primality Test
 - Java BigInteger
