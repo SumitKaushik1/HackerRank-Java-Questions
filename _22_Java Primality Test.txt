@@ -1,0 +1,18 @@
+                       //break;
+                     //  }
+                                
+                    //   i.add(one);
+                 //  }              
+            //  }
+            
+              
+              BigInteger actualNumber=new BigInteger(n);
+              boolean result=actualNumber.isProbablePrime(1);// actualNumber.isProbablePrime(int certainity);,if the certainity is 1 then it will check actualNumber  is  primeOrNot
+              if(result==true)
+                  System.out.println("prime");
+              else
+              System.out.println("not prime");
+        
+        bufferedReader.close();
+    }
+}
