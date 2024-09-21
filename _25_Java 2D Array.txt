@@ -1,0 +1,33 @@
+row=0;row<(arr.size()-2);row++){
+               
+                //you have to move column to col-2  
+               for(int column=0;column<((arr.get(0).size())-2);column++){
+                   int sumCheck=Integer.MIN_VALUE;
+                  sumCheck
+                  = arr.get(row).get(column)+ arr.get(row).get(column+1)+ arr.get(row).get(column+2)
+                    //00+01+02---this are indexes, 
+                   +
+                   arr.get(row+1).get(column+1)
+                   //+11----theese are indexes 
+                   +
+                   arr.get(row+2).get(column)+ arr.get(row+2).get(column+1)+ arr.get(row+2).get(column+2)
+                   //20+21+22---these are indexes
+                   ;
+                   //00 01 02
+                   //   11
+                   //20 21  22
+                   //first glass
+                   //byobserving juse move row and column till row-2,col-2
+                   sum=Math.max(sumCheck,sum);
+                }   
+                   
+               
+               
+               
+           }     
+                
+                
+          System.out.println(sum);
+        bufferedReader.close();
+    }
+}
