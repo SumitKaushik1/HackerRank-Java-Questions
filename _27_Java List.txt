@@ -1,0 +1,59 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        try(Scanner scan=new Scanner(System.in)){
+            
+           List<Integer>l=new ArrayList<>();
+          
+           int sizeOfList=scan.nextInt();
+           
+           for(int i=1;i<=sizeOfList;i++){
+               l.add(scan.nextInt());
+           }
+           
+          // System.out.println(l);
+           
+           int queries=scan.nextInt();
+           
+           for(int i=1;i<=queries;i++){
+               String s=scan.next();
+               
+               if(s.equals("Insert")){
+                   int index=scan.nextInt();
+                   int value=scan.nextInt();
+                   if(index>=l.size())
+                      l.add(value);
+                    else
+                     l.add(index,value);//we can add to the particualr index then remaining will 
+                     //shifted
+                  
+                 // System.out.println("insert at"+index+"value:"+value);
+                 // System.out.println(l);
+                  
+               }
+               
+                 if(s.equals("Delete")){
+                   int index=scan.nextInt();
+                   l.remove(index);
+                  // System.out.println("remove from"+index);
+                //   System.out.println(l);  
+               }
+               //System.out.println(l);
+           }
+           
+           
+           for(int i=0;i<l.size();i++){
+               System.out.print(l.get(i)+" ");
+           }
+           
+           
+           
+        }
+     
+        
+    }
+}
