@@ -56,7 +56,7 @@ _27_ Java Arraylist
 <br>
 _28_ Java List
 <br>
-_29_Java Map
+_29_ Java Map
 <br>
 - Java Stack
 - Java Hashset
