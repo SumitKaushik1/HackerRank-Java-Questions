@@ -1,0 +1,60 @@
+import java.util.*;
+class Solution{
+	
+	public static void main(String []argh)
+	{
+		Scanner sc = new Scanner(System.in);
+		
+		while (sc.hasNext()) {
+            
+             //40->(, 91->[, 123->{, 125->}, 93->], 41->)  
+			String input=sc.next();
+            //Complete the code
+            
+            //autoboxing ie char changed to Character class  
+           // Character scan='c';
+            
+           // System.out.println(input);
+           char [] toStoreAllBrackets=input.toCharArray();
+           
+           
+           //Charcter is the class
+           Stack<Character> toStoreOpeningBrackets=new Stack<>();
+           
+           
+           compare:
+           for(char character:toStoreAllBrackets){
+               //interally it will match the ascii value of charcter to 40 
+               if(character== 40 || character == 91 || character==123)
+               // autoboxing is happeing char changed to char class
+                    //intial or opening  bracket are there
+                    //character is opening bracket 
+                    toStoreOpeningBrackets.push(character);
+                    else{
+                        
+                        // else the character is  closing bracket
+                        //so in that case remove the  closing bracket corressponding to the opening bracket from the stack that is presnt at the top of the stack
+                        if(!toStoreOpeningBrackets.empty()&&(
+                         (character==41 &&toStoreOpeningBrackets.lastElement()== 40 )|| (character==93 &&toStoreOpeningBrackets.lastElement()== 91 ) || (character== 125 &&toStoreOpeningBrackets.lastElement() == 123 )   
+                        )){
+                            toStoreOpeningBrackets.pop();
+                        }
+                        else{
+                                                 
+                        
+                        
+                    }
+           }
+           
+           System.out.println(toStoreOpeningBrackets.empty());
+           //give true  or false
+           
+           //after removing all the opening brakets from stack it means  that every opening bracket has its closing bracket so the string is balanced 
+           //if stack is not empty then there must be openging/closing  bracket which doesnot have the its corresppong closing/opeing bracket  
+           
+           
+		}
+		
+	}
+}
+
