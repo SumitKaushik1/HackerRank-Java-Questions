@@ -58,7 +58,7 @@ _28_ Java List
 <br>
 _29_ Java Map
 <br>
-- Java Stack
+_30_ Java Stack
 - Java Hashset
 - Java Generics
 - Java Comparator
