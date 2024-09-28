@@ -1,0 +1,94 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+ public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        int t = s.nextInt();
+        String [] pair_left = new String[t];
+        String [] pair_right = new String[t];
+        
+        for (int i = 0; i < t; i++) {
+            pair_left[i] = s.next();
+            pair_right[i] = s.next();
+        }
+
+
+//Write your code here
+    
+    Set<String>s2=new HashSet<>();
+    //Hashset is for tha collection of unordered adn unsorted elements
+    
+    
+    int count=0;
+    for(int i=0;i<t;i++){
+           String sp=pair_left[i]+" "+pair_right[i];
+           if(!s2.contains(sp)){
+                   System.out.println(++count);
+                   s2.add(sp);
+                
+           }
+           else
+              System.out.println(count);      
+    }
+  
+  
+  /*
+  in set Duplicacy is not allowed 
+  for(String s1:s2){
+      System.out.println(s1);
+  }
+   */
+  
+
+    
+    
+    
+    /*
+    int count=0;
+       for(int i=0;i<t;i++){
+           ++count;
+           String pair_first=pair_left[i];
+           String  pair_second=pair_right[i];
+           
+           //System.out.println(pair_first);
+           //System.out.println(pair_second);
+           if(i>0){
+                for(int j=0;j<i;j++){
+                    
+                     // System.out.println(pair_first);
+                      //System.out.println(pair_second);
+                       //System.out.println(pair_left[i]);
+                       //System.out.println(pair_right[i]);
+                    
+                  if(pair_first.equals(pair_left[j]) && pair_second.equals(pair_right[j]))
+                      {
+                         //System.out.println("inside1");
+                         --count;
+                         break;
+                         
+                      }
+                      
+                 
+                        
+             }
+             System.out.println(count);
+             
+             
+           }
+          else{
+             // System.out.println("inside3");
+              System.out.println(count);
+          }
+          
+          
+           
+           
+           
+       }*/
+    }
+}
