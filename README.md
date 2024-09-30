@@ -61,7 +61,9 @@ _29_ Java Map
 _30_ Java Stack
 <br>
 _31_ Java Hashset
-- Java Generics
+<br>
+_32_ Java Generics
+<br>
 - Java Comparator
 - Java Sort
 - Java Dequeue
