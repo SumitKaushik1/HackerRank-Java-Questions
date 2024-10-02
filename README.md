@@ -1,4 +1,4 @@
-ki# HackerRank-Questions
+# HackerRank-Questions
 
 _1_ Welcome to Java!
 <br>
@@ -66,7 +66,8 @@ _32_ Java Generics
 <br>
 _33_ Java Comparator
 <br>
-- Java Sort
+_34_Java Sort
+<br>
 - Java Dequeue
 - Java BitSet
 - Java Inheritance I
