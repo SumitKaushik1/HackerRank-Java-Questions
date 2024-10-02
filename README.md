@@ -66,7 +66,7 @@ _32_ Java Generics
 <br>
 _33_ Java Comparator
 <br>
-_34_Java Sort
+_34_ Java Sort
 <br>
 - Java Dequeue
 - Java BitSet
