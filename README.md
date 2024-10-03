@@ -68,7 +68,8 @@ _33_ Java Comparator
 <br>
 _34_ Java Sort
 <br>
-- Java Dequeue
+_35_ Java Dequeue
+<br>
 - Java BitSet
 - Java Inheritance I
 - Java Inheritance II
