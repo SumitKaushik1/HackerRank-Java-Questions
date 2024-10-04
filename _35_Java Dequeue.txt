@@ -1,0 +1,41 @@
+chaiye presnt deque kai hisab se ise toh banega (3,5,2),jab  previous hasset m 2 value dalenge toh banega no dublicate ,sorted unordered like,3,5-->change--> 2,3,5  ,ab size h 3 set ka yah unique numbers h 3 to max m dal denge   3,now mujhe pata h ki hme set joh dequeue k hisab set banane h set m wohi hi number hone chahiye jitne deque m h toh agle iteration m ie--- correct 
+                        
+                        //third---> m deque m 5,2,3 toh ,set bana chaiye present dequee k hisab se like (5,2,3) , previoud hashset m dalenge previous m 3,sorted ,unordered dublicated not allowed, toh  2,3,5---> 2,3,5 unique 3 size 3 so max =3  --->correct
+                        
+                        //fourth deque 2,3,2 toh set bana (2,3,2) agr 2 dalenge previous hashset m toh 2,3,5 ----> 2,3,5 unique 3 size is 3 max =3 --- incorrect b/z in teh deque uniuqe si 2 number according to he hasset if we uniuqe is 3 so what we do 
+                        
+                        
+                        //so what we do that 
+                 //3)first ------>   <-5,3,5<-
+                 //4)second------>   <-3,5,2<-
+                 //5)third------->   <-5,2,3<-
+                 //6)fourth------>    <-2,3,2<-  
+                      //so what we do that m  jaise jasi deque m value remove hogi usi value koh set se bhi remvoe kardo kyki set koh bhi deque kai hi sath chalna h. hme deque and the set ka size(m) same hi rakhna h kyuki deque m toh value sath sath move karna age aur set se ghme unique numbers find karne h ie size 
+                    //jab first--> m deque m 5,3,5 h toh set banega chaiye 5,3,5 hoga aur hashset m ,3,5,size 2 , unique 2// hasset se  ka 5 remvoe karne ke jarorot nahi h aur dublicate value waise allowed nahih toh waise h remove hoe gya 5 waise hi remove how jayega hashset se,
+                    
+                    //second--->m  deque m 3,5,2   ,5 hatane kai bad shoroat ka, h  set benaga chaiye  3,5,2 aur hasset banega 2 dalne kai bad 2,3,5 end m  size 3 unique also 3
+                   
+                 //third m --> m deque banega 5,2,3 ,shoroat se 3 hatane kae bad ,previois hashset se 3 hata doh toh bachega 2,5,,  set banana  chaiye (5,2,3) according to deque ,hashset me 3 dalne kae bad deuq m last ka number (2,3,5)size is 3 uniquq also 3
+                    
+                //fourth -->m --> m deque banega 2,3,2 ,shoroat se 5 hatane kae bad ,previois hashset se 5 hata doh toh bachega hashset (2,3)  set banana  chaiye (2,3,2) according to deque ,hashset me 2 dalne kae bad deuq m last ka number ,2,3, size =2 uniuq also 2
+                    
+                    if(!deque.contains(numRemoved))
+                    //ie deque dublicate nahi tab tab set se  se remove karne ki value 
+                    storeSet.remove(numRemoved);
+                   
+                        
+                 }
+                 
+           }
+            
+                 //System.out.println(deque);//toString() is called of dequeue
+                 //System.out.println(storeSet);//toString() is called of storeSet 
+                    
+                 //end here  
+                 
+                 System.out.println(max);
+        }
+    }
+
+
+
