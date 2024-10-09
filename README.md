@@ -70,7 +70,7 @@ _34_ Java Sort
 <br>
 _35_ Java Dequeue
 <br>
-- Java BitSet
+_36_ Java BitSet
 - Java Inheritance I
 - Java Inheritance II
 - Java Abstract Class
