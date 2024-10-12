@@ -1,0 +1,116 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        
+        try(Scanner scan=new Scanner(System.in)){
+          // Scanner scan=new Scanner(System.in);
+        int lengthOfBits=scan.nextInt();
+        int numberOfOperation=scan.nextInt();  
+           //scan.nextLine(); 
+        BitSet B1=new BitSet(lengthOfBits);
+        BitSet B2=new BitSet(lengthOfBits);
+        //make bit set with value false 0 to lengthOfBits-1
+             
+              
+        for(int i=0;i<numberOfOperation;i++){
+                String gates=scan.next();
+                int bitSet=scan.nextInt();
+                int indexOfBitSet=scan.nextInt();
+                
+                  if(gates.equals("AND")){
+                      
+                      if ( bitSet == 1){
+                        B1.and(B2);
+                    } else {
+                        B2.and(B1);
+                    }
+                    
+                    int countB1=B1.cardinality();//it will count number of set bits ie number fo 1s
+                    int countB2=B2.cardinality();
+                System.out.println(countB1+" "+countB2);
+                        
+                        
+         }else if(gates.equals("SET")){
+             
+                     if ( bitSet == 1){
+                        B1.set(indexOfBitSet);
+                    } else {
+                        B2.set(indexOfBitSet);
+                    }
+                    
+                    int countB1=B1.cardinality();//it will count number of set bits ie number fo 1s
+                    int countB2=B2.cardinality();
+                System.out.println(countB1+" "+countB2);
+                        
+             
+        
+      }else if(gates.equals("FLIP")){
+            
+                     if ( bitSet == 1){
+                        B1.flip(indexOfBitSet);
+                    } else {
+                        B2.flip(indexOfBitSet);
+                    }
+                    
+                    int countB1=B1.cardinality();//it will count number of set bits ie number fo 1s
+                    int countB2=B2.cardinality();
+                System.out.println(countB1+" "+countB2);
+          
+          
+      }else if (gates.equals("XOR")){
+          
+                   if ( bitSet == 1){
+                        B1.xor(B2);
+                    } else {
+                        B2.xor(B1);
+                    }
+                    
+                    int countB1=B1.cardinality();//it will count number of set bits ie number fo 1s
+                    int countB2=B2.cardinality();
+                System.out.println(countB1+" "+countB2);
+          
+          
+      }else{
+              if ( bitSet == 1){
+                        B1.or(B2);
+                    } else {
+                        B2.or(B1);
+                    }
+                    
+                    int countB1=B1.cardinality();//it will count number of set bits ie number fo 1s
+                    int countB2=B2.cardinality();
+                System.out.println(countB1+" "+countB2);
+          
+          
+          
+      }
+            
+            
+            
+                  
+                       
+                    
+                
+                
+            }          
+                 
+        }
+        
+      
+           
+             
+       
+            
+            
+        }
+        
+        
+    }
+
