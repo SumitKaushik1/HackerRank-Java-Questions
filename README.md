@@ -72,7 +72,8 @@ _35_ Java Dequeue
 <br>
 _36_ Java BitSet
 <br>
-- Java Inheritance I
+_37_ Java Inheritance I
+<br>
 - Java Inheritance II
 - Java Abstract Class
 - Java Interface
