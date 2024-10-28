@@ -76,7 +76,7 @@ _37_ Java Inheritance I
 <br>
 _38_ Java Inheritance II
 <br>
-_39_Java Abstract Class
+_39_ Java Abstract Class
 <br>
 _40_ Java Interface
 <br>
