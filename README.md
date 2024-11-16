@@ -88,7 +88,7 @@ _43_ Java Instanceof keyword
 <br>
 _44_ Java Iterator
 <br>
-_45 Java Exception Handling (Try-catch)
+_45_ Java Exception Handling (Try-catch)
 <br>
 - Java Exception Handling
 - Java Varargs - Simple Addition
