@@ -98,7 +98,8 @@ _48_ Java Reflection - Attributes
 <br>
 _49_ Can You Access?
 <br>
-- Prime Checker
+_50_ Prime Checker
+<br>
 - Java Factory Pattern
 - Java Singleton Pattern
 - Covariant Return Types
