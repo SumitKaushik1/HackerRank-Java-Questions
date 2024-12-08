@@ -1,4 +1,4 @@
-in# HackerRank-Questions
+# HackerRank-Questions
 
 _1_ Welcome to Java!
 <br>
@@ -100,6 +100,7 @@ _49_ Can You Access?
 <br>
 _50_ Prime Checker
 <br>
-- Java Factory Pattern
+_51_ Java Factory Pattern
+<br>
 - Java Singleton Pattern
 - Covariant Return Types
