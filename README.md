@@ -102,5 +102,5 @@ _50_ Prime Checker
 <br>
 _51_ Java Factory Pattern
 <br>
-- Java Singleton Pattern
+_52_ Java Singleton Pattern
 - Covariant Return Types
