@@ -98,7 +98,6 @@ _48_ Java Reflection - Attributes
 <br>
 _49_ Can You Access?
 <br>
-<br>
 _50_ Prime Checker
 <br>
 _51_ Java Factory Pattern
