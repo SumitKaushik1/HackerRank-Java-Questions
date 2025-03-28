@@ -1,0 +1,75 @@
+import java.io.*;
+import java.lang.reflect.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+//\Write your code here
+class Add{
+    
+    //... three dots represnt the array +  first si string secodn is integer instad of this we use "+" it will concatinate
+    
+    //Hashset is unordered and unsorted
+    
+    //method[i].getName() will return the string 
+    
+    
+    //Add.class = class is the literal which will return the Class instance which is poitnign to Add class ,Class is the class which contain all the informatin about the runtime class ie the Add class 
+    void add(int... sumElements){
+        int sum=sumElements[0];
+        String s=String.valueOf(sumElements[0]);
+        for(int i =1;i<sumElements.length;i++){
+            sum+=sumElements[i];
+            s=s+"+"+String.valueOf(sumElements[i]);
+        }
+      
+        System.out.println(s+"="+sum);
+    }
+}
+
+public class Solution {
+
+    public static void main(String[] args) {
+       try{
+			BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+			int n1=Integer.parseInt(br.readLine());
+			int n2=Integer.parseInt(br.readLine());
+			int n3=Integer.parseInt(br.readLine());
+			int n4=Integer.parseInt(br.readLine());
+			int n5=Integer.parseInt(br.readLine());
+			int n6=Integer.parseInt(br.readLine());
+			Add ob=new Add();
+			ob.add(n1,n2);
+			ob.add(n1,n2,n3);
+			ob.add(n1,n2,n3,n4,n5);	
+			ob.add(n1,n2,n3,n4,n5,n6);
+			Method[] methods=Add.class.getDeclaredMethods();
+			Set<String> set=new HashSet<>();
+			boolean overload=false;
+			for(int i=0;i<methods.length;i++)
+			{
+				if(set.contains(methods[i].getName()))
+				{
+					overload=true;
+					break;
+				}
+				set.add(methods[i].getName());
+				
+			}
+			if(overload)
+			{
+				throw new Exception("Overloading not allowed");
+			}
+			}
+			catch(Exception e)
+			{
+				e.printStackTrace();
+			}
+		}
+		
+	
+	
+
+}
+
