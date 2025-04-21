@@ -1,0 +1,23 @@
+
+public class Solution {
+
+        public static void main(String[] args){
+           // Class student = ~~~Complete this line~~~;
+           // Method[] methods = ~~~Complete this line~~~;
+            
+            //in the ClassName.class,ie class is the literal when we do ClassName.class it will return the Class instance which consists the inforamtion about the runtime class object  
+          Class student = Student.class;
+            //nwo Class instacne has the method getDeclaredMethod it will returnt he infromation about the all methods in Class instnce of runtime object 
+          Method[] methods = student.getDeclaredMethods();  
+            ArrayList<String> methodList = new ArrayList<>();
+            for(Method m:methods){
+                //.getNmae will returnt the string name of all mthod that class instance will contain 
+                methodList.add(m.getName());
+            }
+            Collections.sort(methodList);
+            for(String name: methodList){
+                System.out.println(name);
+            }
+        }
+
+    }
