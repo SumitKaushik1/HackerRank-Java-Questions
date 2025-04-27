@@ -1,0 +1,93 @@
+import java.io.*;
+import java.lang.reflect.*;
+import java.util.*;
+import java.util.regex.*;
+import java.security.*;
+
+
+public class Solution {
+
+	public static void main(String[] args) throws Exception {
+		DoNotTerminate.forbidExit();	
+
+		try{
+			BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+			int num = Integer.parseInt(br.readLine().trim());
+			Object o;// Must be used to hold the reference of the instance of the class Solution.Inner.Private
+
+			//Write your code here
+           
+/*
+*how we create the reference of  static inner class 
+
+* class Solution{
+static  class Inner{
+}
+}
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+*reference variable ->
+Solution.Inner p;
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+*how to make object of inner class
+new Solution.Inner();
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+*Solution.Inner p=new Solution.Inner();
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+* class Solution{
+static  class Inner{
+private class InnerMost{
+}
+}
+}
+
+
+now consider the class as the variable only if i declara variable like private int p inside the Inner class so it is private it means it can be accessed only by the methods inside the Inner class and or  we cannot access it even it is private or public or no specifier 
+even we do like 
+
+
+class Solution{
+static  class Inner{
+private int i;
+
+}
+
+same consider this class is private ,but here it is the big difference that this classs cannot be accessed by the methods iside the Inner class
+
+* class Solution{
+static  class Inner{
+private class InnerMost{
+powerof2(int num){
+}
+
+}
+}
+}
+
+
+
+*it can be accessed by the like this 
+*since it is  static so Classname.InnerclassName
+*Solution.Inner p=new Solution.Inner();
+*p.new InnerMost();//InnerMost is the non static class so we need the new after p.
+*p.powerof2(num);
+
+
+*/
+            
+            
+            Solution.Inner i= new Solution.Inner();  
+            //upside it is told to hold the reference of this  
+            o= i.new Private();     
+            
+            
+            //o =object class does not has the powerof2 method so we have to say that typecast or downcasting the variable to tell it has this method 
+            
+       System.out.println(num+" is "+((Inner.Private)o).powerof2(num)); 
+     
+            
+            
+		System.out.println("An instance of class: " + o.getClass().getCanonicalName() + " has been created");
