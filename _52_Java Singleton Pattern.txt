@@ -1,0 +1,39 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+import java.lang.reflect.*;
+
+
+//basically singlton class is made so that only one instance is made by this class and that instance is used throughout how it is possible firstly we make the instance that class within that class only make it static so whenever we want the instacne of that class we just the static method to take the refernce of that class , one string data memeber we put so it can be used for message 
+
+class Singleton{
+    public String str;//bydefault null  
+    private static Singleton singleton_variable;//by default null 
+    
+    private Singleton(){
+        str="Hello I am a singleton! Let me say hello world to you";
+    }
+    
+    //you can initialize the staic variabel in static block and also in the static method as below.
+    public static Singleton getSingleInstance(){
+        
+        if(singleton_variable == null){
+            singleton_variable =new Singleton();
+        } 
+        return singleton_variable;
+    }
+
+}
+
+
+ class Solution{
+  
+     public static void main(String [] args){
+         Singleton s=Singleton.getSingleInstance();
+         System.out.println(s.str);
+     }
+    
+    
+}
