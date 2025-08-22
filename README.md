@@ -22,8 +22,6 @@ _10_ Java Static Initializer Block
 <br>
 _11_ Java Int to String
 <br>
-
-
 _12_ Java Date and Time
 <br>
 _13_ Java Currency Formatter
